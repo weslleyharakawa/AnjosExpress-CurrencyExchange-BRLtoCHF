@@ -1,0 +1,73 @@
+/* 
+Customized Currency Calculator
+Developed by Weslley A. Harakawa
+weslleyharakawa@gmail.com
+Copyright (c) anjosexpress.ch
+*/ 
+
+Sample requests cURL
+
+
+## Calculate based on CHF to send:
+
+curl --location --request POST 'https://apps.intradatasolutions.com/AnjosExpress/CmsApi/AmountsAndFees/Calculate' \
+
+--header 'Content-Type: application/json' \
+
+--data-raw '{
+
+    "SendAmount": 200,
+
+    "PayoutCountryCode": "BR",
+
+    "PayoutCurrencyCode": "BRL"
+
+}'
+
+ 
+
+## Calculate based on BRL to payout:
+
+curl --location --request POST 'https://apps.intradatasolutions.com/AnjosExpress/CmsApi/AmountsAndFees/Calculate' \
+
+--header 'Content-Type: application/json' \
+
+--data-raw '{
+
+    "PayoutAmount": 5000,
+
+    "PayoutCountryCode": "BR",
+
+    "PayoutCurrencyCode": "BRL"
+
+}'
+
+ 
+
+Sample response:
+
+{
+
+    "SendCurrency": "BRL",
+
+    "SendAmount": 877.0,
+
+    "PercentFee": 0.0000,
+
+    "PercentFeeAmount": 0.00,
+
+    "FlatFee": 0.0000,
+
+    "OtherFees": 0.0,
+
+    "TotalFees": 0.0000,
+
+    "TotalAmount": 877.00,
+
+    "XRate": 5.70,
+
+    "PayoutAmount": 5000.0,
+
+    "PayoutCurrency": "CHF"
+
+}
