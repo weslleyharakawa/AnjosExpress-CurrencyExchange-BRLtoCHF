@@ -2,6 +2,9 @@
  Calculator Converter and API to show exchange rates between BRL and CHF
  https://anjosexpress.ch/en
  
+ ## Images
+![alt text](https://user-images.githubusercontent.com/5875820/149598619-3fc2c9e1-67e6-44d7-b2e5-d1051141a65c.png)
+ 
  # Customized Currency Calculator
 
 Created by Weslley A. Harakawa to integrate the Anjos Express website via API, to the Remittance Exchange provider.
